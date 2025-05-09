@@ -1,12 +1,20 @@
-# React + Vite
+# 📝 Planner Hello Kitty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://camillebarbosa.github.io/planner-hello-kitty/
 
-Currently, two official plugins are available:
+Um planner fofo da Hello Kitty feito com React, que permite organizar suas tarefas de forma simples e intuitiva.  
+Você pode adicionar novas tarefas, atualizar seu status, excluir tarefas e pesquisar pelo que foi criado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- ✅ Adicionar novas tarefas com nome e categoria
+- 🔄 Marcar tarefas como concluídas
+- ❌ Excluir tarefas da lista
+- 🔍 Pesquisar tarefas por nome
+- 🎀 Interface personalizada com tema Hello Kitty
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖼️ Interface
+
+A interface possui um visual temático inspirado na Hello Kitty, com cores suaves e elementos visuais que tornam o uso agradável.
+
+## 🚀 Tecnologias
