@@ -1,5 +1,9 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import TodoForm from './components/TodoForm';
+import TodoComponent from './components/todocomponent';
+import './App.css';
+
+
 
 function App() {
   const [todos, setTodos] = useState([
@@ -21,29 +25,34 @@ function App() {
       category: "Estudos",
       isCompleted:true,
     },
-
-  ]);
+]);
+const addTodoComponent = (text, category) => {
+  const newTodos =[
+    ...todos, 
+    {
+      id: Math.floor(Math.random() * 10000),
+      text,
+      category,
+      isCompleted: false,
+    },
+  ];
+  setTodos(newTodos);
+};
   return (
     <div className="app">
       <div className="header" >
-        <img id="hello-kitty-balao"src="./src/assets/pngegg (1).png" alt="" />
+        <img className="hello-kitty-balao" src="./pngegg (1).png" alt="" />
         <h1>Planner Hello Kitty</h1>
-        <img id="icone-hello-kitty"src="./src/assets/pngegg.png" alt="" />
+        <img className="icone-hello-kitty" src="./pngegg.png" alt="" />
         
       </div>
     <div className= "todo-list">
       {todos.map((todo) => (
-        <div className="todo">
-          <div className="content">
-            <p>{todo.text}</p>
-            <p className="category">({todo.category})</p>
-          </div>
-          <button>Completar tarefa</button>
-          <button>x</button>
-        </div>
+        <TodoComponent key={todo.id} todo={todo}/>
       )) 
       }
     </div>
+      <TodoForm addTodoComponent={addTodoComponent}/>
     </div>
     );
 }

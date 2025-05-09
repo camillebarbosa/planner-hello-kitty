@@ -1,8 +1,18 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family:cursive;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #767373;
+ 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .header{
@@ -11,8 +21,8 @@
   padding-left:10rem;
   padding-right:10rem;
   height: 250px;
-  border: 5px solid #dbbec0;
-  background-color: #fef5ee;
+  border: 4px dashed #a2b8cf;
+  background-color: #ffffff;
 }
 .header h1{
   padding-top:2rem;
@@ -20,36 +30,118 @@
   font-family:cursive;
 }
 
-#icone-hello-kitty{
+.icone-hello-kitty{
   padding-top:3rem;
   height: 50px;
 }
-#hello-kitty-balao{
+.hello-kitty-balao{
   height: 100px;
 }
 .todo-list{
   border-radius: 1rem;
   margin-top:10px;
-  padding-left:10rem;
-  padding-right:10rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 4px dashed #fef5ee;
+  padding:2rem;
+  border: 4px dashed #a2b8cf;
+  background-color: #ffffff;
+  display:block;
+  align-items: center;
+}
+.content{
+  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  text-align:left;
+  border: 3px solid #c9b1c4;
   background-color: #a2b8cf;
-  
+  margin-bottom: 1rem;
+  color: aliceblue;
 }
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.content p{
+  margin-left: 1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.task-buttons{
+  display:flex;
+  align-items: center;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.content button{
+  margin-right: 1rem;
 }
+button:hover {
+  border-color:#a6a6a6;
+}
+.complete{
+  background-color: #fef5ee;
+  color: #c9b1c4;
+  margin:0.5rem;
+
+}
+.complete:hover{
+  background-color:#a6a6a6;
+  color:#fef5ee;
+}
+.remove{
+  color: #fef5ee;
+}
+.remove:hover{
+  background-color: #a6a6a6;
+  color: #c9b1c4;
+}
+
+.todo-form {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  border: 4px dashed #dbbec0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.todo-form h2 {
+  font-family: cursive;
+  color: #c9b1c4;
+  margin-bottom: 1rem;
+}
+.todo-form button{
+  margin: 1rem;
+  color:#fef5ee;
+}
+
+.todo-form button:hover {
+  background-color: #a2b8cf;
+}
+
+input, select {
+  padding: 0.5rem;
+  margin: 1rem;
+  font-family: cursive;
+  font-size: 1rem;
+  border: 2px solid #dbbec0;
+  border-radius: 10px;
+  background-color: #fef5ee;
+  color: #545454;
+
+}
+
+select:hover{
+    border-color: #a2b8cf;
+}
+input:focus, select:focus {
+  border-color: #a2b8cf;
+  color:#545454;
+  outline: none;
+  background-color: #fef5ee;
+}
+option {
+  background-color: #fef5ee;
+  color: #dbbec0;
+  font-family: cursive;
+}
+input::placeholder {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
 
 @keyframes logo-spin {
   from {
